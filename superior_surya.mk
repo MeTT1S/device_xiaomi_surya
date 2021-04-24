@@ -25,6 +25,9 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/superior/config/common.mk)
 
+# Inherit MIUI Camera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 # Device identifier
 PRODUCT_NAME := superior_surya
 PRODUCT_DEVICE := surya
